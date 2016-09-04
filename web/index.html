@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<title>chatroom</title>
+		<link rel="stylesheet" href="/styles/main.css">
+	</head>
+	<body>
+	<div id="mainboard">
+		<div id="background">
+			<div>
+				<form id="logout" action = "">
+					<button id="lobt">Logout</button>
+				</form>
+			</div>
+			<div id="board">
+				<ul id = "messages"></ul>
+			</div>
+			<form id="ms" action = "">
+				<input id = "m" autocomplete = "off" /><button>Send</button>
+			</form>
+		</div>
+		<div id="userboard">
+			<div id="onlineusers">
+				<p>Online Users:</p>
+			</div>
+			<ul id="olusr">
+			</ul>
+		</div>
+	</div>
+		<div id="copyright">
+			<p align="center">Copyright @ 2016 Yizheng Zhao, Carnegie Mellon University</p>
+		</div>
+		<div id="login">
+			<p id="logintext">Please enter your user name</p>
+			<div>
+				<form id="user" action="">
+					<input id="usernameInput" placeholder="user name" style="width: 150px" autocomplete="off" /><button>Submit</button>	
+				</form>
+			</div>
+		</div>
+
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+		<script src="scripts/client.js"></script>
+	</body>
+</html>
